@@ -1,19 +1,25 @@
 #include <iostream>
+#include <string>
 #include <deque>
 
 using namespace std;
 
-int deque_with_int()
+int deque_init()
 {
-	deque	deq;
-	put_deque(deq, "data1");
-	put_deque(deq, "data2");
+	deque<string>	de;
+	de.push_back("data1");
+	de.push_back("data2");
+	de.push_back("data3");
+
+	de.push_front("data4");
 
 	return 0;
 }
 
 int main()
 {
+	deque_init();
 
+	return 0;
 }
 
