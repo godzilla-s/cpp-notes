@@ -120,17 +120,11 @@ void DoJiaShi()
 
 int main()
 {
-  // 西门庆想找潘金莲
+    // 西门庆想找潘金莲
     DoPanJinLian();
-
 
     // 西门庆想找贾氏
     DoJiaShi();
 
-
-    _CrtSetDbgFlag(_CRTDBG_LEAK_CHECK_DF | _CRTDBG_ALLOC_MEM_DF);
-    _CrtDumpMemoryLeaks();
-
-    system("pause");
     return 0;
  }
