@@ -3,7 +3,7 @@
 using std::cout;
 using std::endl;
 
-//
+// 基类
 class IStrategy
 {
 public:
