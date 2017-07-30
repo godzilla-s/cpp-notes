@@ -58,10 +58,12 @@ CEmperor::CEmperor(void)
 {
     cout << "Create CEmperor Instance" << endl;
 }
+
 CEmperor::~CEmperor(void)
 {
     cout << "Destroy CEmperor Instance and release its resource" << endl;
 }
+
 void CEmperor::EmperorInfo(void)
 {
     char msgBuffer[50] = { 0 };
@@ -69,6 +71,7 @@ void CEmperor::EmperorInfo(void)
     string msg(msgBuffer);
     cout << msg.c_str() << endl;
 }
+
 CEmperor* CEmperor::GetInstance()
 {
     if (NULL == m_pEmperor)
