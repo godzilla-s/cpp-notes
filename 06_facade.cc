@@ -1,5 +1,8 @@
 //门面模式
 #include <iostream>
+#include <string>
+
+using namespace std;
 
 class ILetterProcess
 {
@@ -60,6 +63,29 @@ void CLetterProcessImpl::SendLetter()
     cout << "邮递信件..." << endl;
 }
 
+
+class CLetterPolice
+{
+public:
+    CLetterPolice(void);
+    ~CLetterPolice(void);
+    void CheckLetter(ILetterProcess *pLetterProcess);
+};
+
+CLetterPolice::CLetterPolice(void)
+{
+}
+
+CLetterPolice::~CLetterPolice(void)
+{
+}
+
+void CLetterPolice::CheckLetter( ILetterProcess *pLetterProcess )
+{
+    cout << "Check Letter\n";
+    return;
+}
+
 class CModenPostOffice
 {
 public:
@@ -95,28 +121,6 @@ void CModenPostOffice::SendLetter( string context, string address )
     m_pLetterProcess->LetterIntoEnvelope();
     //邮递信件
     m_pLetterProcess->SendLetter();
-}
-
-class CLetterPolice
-{
-public:
-    CLetterPolice(void);
-    ~CLetterPolice(void);
-    void CheckLetter(ILetterProcess *pLetterProcess);
-};
-
-CLetterPolice::CLetterPolice(void)
-{
-}
-
-CLetterPolice::~CLetterPolice(void)
-{
-}
-
-void CLetterPolice::CheckLetter( ILetterProcess *pLetterProcess )
-{
-    cout << "Check Letter\n";
-    return;
 }
 
 // 测试
