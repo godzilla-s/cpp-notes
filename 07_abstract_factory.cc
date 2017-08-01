@@ -5,13 +5,9 @@ using namespace std;
 class IHuman
 {
 public:
-    IHuman(void)
-    {
-    }
+    IHuman(void) { }
 
-    virtual ~IHuman(void)
-    {
-    }
+    virtual ~IHuman(void) { }
 
     virtual void Laugh() = 0;
     virtual void Cry() = 0;
@@ -19,24 +15,23 @@ public:
     virtual void Sex() = 0;
 };
 
-class CYellowHuman :
-    public IHuman
+class CYellowHuman : public IHuman
 {
 public:
-    CYellowHuman(void)
-    {
-    }
-    ~CYellowHuman(void)
-    {
-    }
+    CYellowHuman(void) { }
+
+    ~CYellowHuman(void) { }
+
     void Laugh()
     {
         cout << "黄色人种会大笑，幸福呀！" << endl;
     }
+
     void Cry()
     {
         cout << "黄色人种会哭" << endl;
     }
+
     void Talk()
     {
         cout << "黄色人种会说话，一般说的都是双字节" << endl;
@@ -204,10 +199,12 @@ public:
     CStandardHumanFactory(void)
     {
     }
+
     ~CStandardHumanFactory(void)
     {
     }
-    IHuman * CreateHuman()
+
+    IHuman *CreateHuman()
     {
         return new T;
     }
