@@ -192,6 +192,7 @@ public:
     virtual IHuman * CreateBlackHuman() = 0;
 };
 
+// 下面使用人种的模板
 template<class T>
 class CStandardHumanFactory : public IHumanFactory
 {
