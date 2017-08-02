@@ -82,12 +82,12 @@ public:
     ~IOuterUser(void)
     {
     }
-    COuterUserBaseInfo * GetUserBaseInfo();
-    COuterUserHomeInfo * GetUserHomeInfo();
-    COuterUserOfficeInfo * GetUserOfficeInfo();
+    virtual COuterUserBaseInfo * GetUserBaseInfo() = 0;
+    virtual COuterUserHomeInfo * GetUserHomeInfo() = 0;
+    virtual COuterUserOfficeInfo * GetUserOfficeInfo() = 0;
 };
 
-class IOuterUser
+class COuterUser
 {
 public:
     IOuterUser(void)
