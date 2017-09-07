@@ -8,7 +8,13 @@ void PrintIt(list<int> n)
     for(list<int>::iterator iter=n.begin(); iter!=n.end(); ++iter)
       cout<<*iter<<" ";//用迭代器进行输出循环
 }
-   
+// List 构造函数:
+// list() 声明一个空列表；
+// list(n) 声明一个有n个元素的列表，每个元素都是由其默认构造函数T()构造出来的
+// list(n, val) 声明一个由n个元素的列表，每个元素都是由其复制构造函数T(val)得来的
+// list(n, val) 声明一个和上面一样的列表
+// list(first, last) 声明一个列表，其元素的初始值来源于由区间所指定的序列中的元素
+
 int main()
 {
     list<int> listn1,listn2;    //给listn1,listn2初始化
