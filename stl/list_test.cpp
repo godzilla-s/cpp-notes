@@ -31,9 +31,15 @@ int list_test()
 
 	list_iter2(la);
 
-  // 累计所有元素
+  	// 累计所有元素
 	int sum = accumulate(la.begin(), la.end(), 0);
 	cout << "sum: " << sum << endl;
 
+	la.sort(); //排序
+	list_iter1(la);
+	
+	la.reverse(); //反转
+	list_iter1(la);
+	
 	return 0;
 }
