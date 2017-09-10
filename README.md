@@ -9,3 +9,6 @@ http://www.cnblogs.com/wanggary/category/294620.html
 
 p2p学习项目
 https://github.com/ktkr3d/peercast
+
+C++ 技术网
+http://www.cjjjs.com/ 
