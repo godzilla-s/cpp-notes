@@ -94,5 +94,9 @@ int list_test()
 	
 	list_print("la list new: ", la);
 	
+	la.merge(lb);
+	
+	list_print("after merge la and lb: ", la);
+	
 	return 0;
 }
