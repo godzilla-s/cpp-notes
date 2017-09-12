@@ -21,7 +21,7 @@ void list_print(char *str, list<int> &lst)
 }
 
 //从后向前
-void list_reverse_print(list<int> &lst)
+void list_printZ(list<int> &lst)
 {
 	if (lst.empty())
 	{
@@ -54,7 +54,7 @@ int list_test()
 
 	list_print("after pop: ", la);
 
-	list_reverse_print(la);
+	list_printZ(la);
 
 	la.insert(la.begin(), 30);
 	la.insert(la.begin(), 40);
@@ -86,5 +86,13 @@ int list_test()
 
 	list_print("after clear: ", lb);
 
+	la.push_front(30);
+	la.push_front(31);
+	la.push_front(32);
+	la.push_front(33);
+	la.push_front(33);
+	
+	list_print("la list new: ", la);
+	
 	return 0;
 }
